@@ -54,6 +54,7 @@ class Main extends Component {
 		<div class="col-md-4">
 		<span class="tit">Bank Country</span>
 		<select class="left form-control" onChange={this.handleChange}>
+		<option>-- Select Country --</option>
 	        {items.map(item => (
 	           <option key={item.id} value={item.currencyCode}>
 					{item.country}

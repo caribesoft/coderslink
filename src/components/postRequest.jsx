@@ -13,22 +13,7 @@ class PostRequest extends Component {
     }
 
    async componentDidMount() {
-        // Simple POST request with a JSON body using fetch
-        /*
-        const url = 'https://jsonplaceholder.typicode.com/posts';
-        const response = await fetch(url);
-        const data = await response.json();     
-        console.log("Response -> ", data)
-        this.setState({ items: data })
         
-        fetch('https://jsonplaceholder.typicode.com/users')
-            .then(res => res.json())
-            .then(json => {
-                this.setState({
-                    items: json,
-                })
-            })
-        */
        fetch('https://api.routefusion.co/currencies')
           .then(res => res.json())
             .then(json => {
@@ -48,17 +33,16 @@ class PostRequest extends Component {
         
     }  
 
-      
-
     render() {
         const { items } = this.state;
         
         return (
             <div className="card text-center m-3">
                 <h5 className="card-header">Simple POST Request</h5>
-                <div className="card-body">
-                    <select    class="left form-control col-md-4"
+                <div className="card-body" class="col-md-4 ">
+                    <select    class="left form-control col-md-12"
                      onChange={this.handleChange}>
+                     <option>-Select Country-</option>
                         {items.map(item => (
                             <option key={item.id} value={item.currencyCode}>
                                 {item.country}

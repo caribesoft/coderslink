@@ -7,6 +7,7 @@ import Main from './components/main';
 import PostRequest from './components/postRequest';
 import SearchBank from './components/searchBank';
 
+
 ReactDOM.render(<Main />, document.getElementById('root')
 );
 
