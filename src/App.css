@@ -7,6 +7,72 @@
   pointer-events: none;
 }
 
+.mainComponent {
+   margin-top: 50px;
+   border: 4px solid #2CD5C4;
+   padding: 20px;
+   font-family: SofiaPro;
+   font-size: 16px;
+
+}
+.titbnk{
+   font-family: SofiaPro;
+   font-size: 22px;
+   font-weight: 600;
+}
+.arow {
+  color: #f0991f;
+  font-family: SofiaPro;
+   font-size: 22px;
+   font-weight: 600;
+}
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+.left {
+   text-align: left;
+}
+
+.method {
+  margin-top: 50px;
+  font-weight: 600;
+}
+
+.btn-info {
+  width: 150px;
+  margin-right: 10px;
+}
+.btn-gray {
+  width: 150px;
+  background: #eee;
+}
+
+.swift, .abba {
+   margin-top: 20px;
+}
+.tit {
+  font-family: SofiaPro;
+  font-size: 22px;
+  padding-bottom: 10px;
+
+}
+.gris {
+  background: #eee;
+}
+.router {
+   margin-top: 155px;
+}
+.conf {
+  margin-top: 3px;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -35,4 +101,9 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+@font-face {
+    font-family: SofiaPro;
+    src: url(./Sofia Pro/sofia_pro_regular-webfont.woff);
 }
